@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'sport catalogus'
+primary: true
+siteGroup: 680398ac-9609-446c-8066-374815c5b013 # sport catalogus
+sortOrder: 1

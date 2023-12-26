@@ -1,0 +1,22 @@
+dateModified: 1703623155
+email:
+  fromEmail: milana_is@hotmail.com
+  fromName: 'sport catalogus'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    06c63463-001c-4e31-8ae1-4796a44815cf: 'sport catalogus' # sport catalogus
+    9ecb36cc-29f4-4826-bb99-2704a87a5fea: Common # Common
+    680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
+system:
+  edition: solo
+  live: true
+  name: 'sport catalogus'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
