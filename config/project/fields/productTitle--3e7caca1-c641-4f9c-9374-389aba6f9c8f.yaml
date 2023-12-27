@@ -1,0 +1,19 @@
+columnSuffix: gpjoeqrm
+contentColumnType: text
+fieldGroup: 37ebbc70-0c96-4509-8d2d-aadb391c7698 # products
+handle: productTitle
+instructions: 'Title of the product'
+name: product-title
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

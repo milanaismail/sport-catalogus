@@ -1,0 +1,20 @@
+columnSuffix: xyzgvugx
+contentColumnType: integer(10)
+fieldGroup: 37ebbc70-0c96-4509-8d2d-aadb391c7698 # products
+handle: productPrice
+instructions: null
+name: product-price
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
