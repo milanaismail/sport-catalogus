@@ -32,8 +32,8 @@ nav ul li a{
 .shop-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
