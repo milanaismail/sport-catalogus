@@ -26,7 +26,7 @@ fieldLayouts:
             id: null
             inputType: null
             instructions: null
-            label: null
+            label: product-title
             max: null
             min: null
             name: null

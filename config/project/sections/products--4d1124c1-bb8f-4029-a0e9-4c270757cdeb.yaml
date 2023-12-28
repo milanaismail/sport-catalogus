@@ -9,7 +9,4 @@ siteSettings:
     hasUrls: true
     template: products/_entry
     uriFormat: '{parent.uri}/{slug}'
-structure:
-  maxLevels: null
-  uid: e4245033-850e-4ed4-aea1-ac0d55181a01
-type: structure
+type: channel

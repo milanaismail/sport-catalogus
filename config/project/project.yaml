@@ -1,4 +1,4 @@
-dateModified: 1703708625
+dateModified: 1703754745
 email:
   fromEmail: milana_is@hotmail.com
   fromName: 'sport catalogus'
@@ -6,7 +6,6 @@ email:
 meta:
   __names__:
     2d4821a0-b7c7-40da-936b-491c1cb092a6: product-image # product-image
-    3e7caca1-c641-4f9c-9374-389aba6f9c8f: product-title # product-title
     4d1124c1-bb8f-4029-a0e9-4c270757cdeb: products # products
     06c63463-001c-4e31-8ae1-4796a44815cf: 'sport catalogus' # sport catalogus
     8b83c4e8-99d9-4e85-a43c-b88a98c20c84: product-price # product-price
