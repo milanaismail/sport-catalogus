@@ -1,4 +1,4 @@
-dateModified: 1703760284
+dateModified: 1703762367
 elementSources:
   craft\elements\Entry:
     -
@@ -17,6 +17,7 @@ elementSources:
         - postDate
         - expiryDate
         - link
+        - 'field:8b83c4e8-99d9-4e85-a43c-b88a98c20c84' # product-price
         - 'field:2d4821a0-b7c7-40da-936b-491c1cb092a6' # product-image
       type: native
 email:
