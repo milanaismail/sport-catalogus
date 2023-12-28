@@ -12,17 +12,31 @@ header{
     text-align: center;
 }
 
-nav ul{
-    list-style: none;
+nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top:20px;
+    overflow: hidden;
 }
 
-nav ul li a{
+nav button{
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+nav a{
+    list-style: none;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
 }
+
 
 .shop{
     padding: 2em;
@@ -52,4 +66,42 @@ nav ul li a{
     border-radius: 6px;
     cursor: pointer;
     padding: 10px 20px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-menu{
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   border-radius: 6px;
+   z-index: 1;
+   padding: 8px;
+
+}
+
+.dropdown-menu a{
+   display: block;
+   font-size: 16px;
+   padding: 6px;
+   float: none;
+   text-align: left;
+   color:#666;
+}
+
+.dropdown:hover .dropdown-menu{
+   display: block;
+}
+
+nav a:hover, nav button:hover{
+    color:  #b3d1ff;
+}
+
+.dropdown-menu a:hover{
+    color:#003366;
 }

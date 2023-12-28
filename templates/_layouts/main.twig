@@ -16,12 +16,17 @@
                 <a href="index.php"><img src="img/logo.png" alt="logo"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a href="index.twig">Home</a></li>
-                    <li><a href="{{siteUrl}}products">Products</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+               <a href="index.twig">Home</a>
+               <div class="dropdown">
+               <button onclick="window.location.href='{{ siteUrl }}products'" >Products</button>
+                    <div class="dropdown-menu">
+                            <a href="{{siteUrl}}products/skates">Skates</a>
+                            <a href="{{siteUrl}}products/sticks">Sticks</a>
+                            <a href="{{siteUrl}}products/helmets">Helmets</a>
+                    </div>
+               </div>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
             </nav>
         </div>
     </header>
