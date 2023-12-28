@@ -8,12 +8,24 @@
     <meta name="referrer" content="origin-when-cross-origin" />
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
+    {% do craft.app.view.registerJsFile('@web/scripts/main.js') %}
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">
-                <a href="index.php"><img src="img/logo.png" alt="logo"></a>
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.php"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="search">
+                    <form action="search.php" method="post">
+                        <input type="text" name="search" placeholder="Search">
+                        <button type="submit" name="submit-search"><img src="img/search.png" alt="search"></button>
+                    </form>
+                </div>
+                <div class="cart">
+                    <a href="cart.php"><img src="img/cart.png" alt="cart"></a>
+                </div>
             </div>
             <nav>
                <a href="index.twig">Home</a>
