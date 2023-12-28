@@ -2,6 +2,13 @@
 {% block content %}
     <div class="shop skates">
         <h1>All products</h1>
+        <div class="shop-control-bar">
+        <select>
+            <option value="0">Sort by</option>
+            <option value="1">Price: low to high</option>
+            <option value="2">Price: high to low</option>
+        </select>
+        </div>
         <div class="shop-container">
             {% set entries = craft.entries().section('products').all() %}
             {% for entry in entries %}

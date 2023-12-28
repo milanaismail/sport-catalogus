@@ -1,11 +1,11 @@
 fill: null
 format: null
 handle: previewImage
-height: 300
+height: 250
 interlace: none
 mode: crop
 name: preview-image
 position: center-center
 quality: null
 upscale: true
-width: 300
+width: 250

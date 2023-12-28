@@ -53,7 +53,7 @@ nav a{
 .product{
     border: 1px solid #ccc;
     border-radius: 6px;
-    width: 400px;
+    width: 350px;
     padding: 20px;
     margin: 20px;
 }
@@ -104,4 +104,19 @@ nav a:hover, nav button:hover{
 
 .dropdown-menu a:hover{
     color:#003366;
+}
+
+.shop-control-bar{
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+select{
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
 }
