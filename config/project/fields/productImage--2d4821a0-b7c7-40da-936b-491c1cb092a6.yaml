@@ -9,16 +9,17 @@ settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7' # product-assets
-  defaultUploadLocationSubpath: '/{slug}'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: false
+  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7' # product-assets
@@ -34,31 +35,12 @@ settings:
       -
         - class
         - craft\elements\conditions\assets\AssetCondition
-      -
-        - conditionRules
-        -
-          -
-            __assoc__:
-              -
-                - class
-                - craft\elements\conditions\assets\HeightConditionRule
-              -
-                - uid
-                - a2ee95a7-a909-4050-96b6-292897b65787
-              -
-                - operator
-                - '='
-              -
-                - value
-                - '300'
-              -
-                - maxValue
-                - ''
   selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7' # product-assets
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

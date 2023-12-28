@@ -6,6 +6,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 1c1c07ac-ae0c-4475-9d7d-d1573f81ee71 # product-category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7a768d6-4119-40e1-aa2a-87e35264dbe7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 2d4821a0-b7c7-40da-936b-491c1cb092a6 # product-image
             instructions: null
             label: null

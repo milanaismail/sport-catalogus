@@ -6,10 +6,10 @@
             {% set entries = craft.entries().section('products').all() %}
             {% for entry in entries %}
             <div class="product">
-{% set productImage = entry.productImage.one() %}
-{% if productImage %}
-    <img src="{{ productImage.url }}" alt="">
-{% endif %}
+            {% set productImage = entry.productImage.one() %}
+            {% if productImage %}
+            <img src="{{ productImage.getUrl('previewImage') }}" alt="{{ entry.title }}">
+            {% endif %}
                 <h2>{{ entry.title }}</h2>
                 <p>€ {{ entry.productPrice }}</p>
                 <button>Add to cart</button>

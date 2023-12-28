@@ -1,4 +1,24 @@
-dateModified: 1703757219
+dateModified: 1703760284
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:4d1124c1-bb8f-4029-a0e9-4c270757cdeb' # products
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+        - 'field:2d4821a0-b7c7-40da-936b-491c1cb092a6' # product-image
+      type: native
 email:
   fromEmail: milana_is@hotmail.com
   fromName: 'sport catalogus'
@@ -13,6 +33,7 @@ fs:
     url: '@web'
 meta:
   __names__:
+    1c1c07ac-ae0c-4475-9d7d-d1573f81ee71: product-category # product-category
     2d4821a0-b7c7-40da-936b-491c1cb092a6: product-image # product-image
     4d1124c1-bb8f-4029-a0e9-4c270757cdeb: products # products
     06c63463-001c-4e31-8ae1-4796a44815cf: 'sport catalogus' # sport catalogus
@@ -22,7 +43,9 @@ meta:
     53bf9987-2148-4aa0-86bb-71fde34f4604: Default # Default
     93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7: product-assets # product-assets
     680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
+    747070c2-a654-448c-901d-7a75e1c8c8ed: categories # categories
     a37f3cdf-8319-4d27-b214-efd6a1418d77: preview-image # preview-image
+    e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
 plugins:
   redactor:
     edition: standard
