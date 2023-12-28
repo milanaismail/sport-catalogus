@@ -11,8 +11,8 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: null
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSource: 'volume:93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7' # product-assets
+  defaultUploadLocationSubpath: '/{slug}'
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
@@ -21,7 +21,7 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: null
+  restrictedLocationSource: 'volume:93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7' # product-assets
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -50,7 +50,7 @@ settings:
                 - '='
               -
                 - value
-                - '200'
+                - '300'
               -
                 - maxValue
                 - ''

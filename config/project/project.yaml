@@ -1,8 +1,16 @@
-dateModified: 1703754745
+dateModified: 1703757219
 email:
   fromEmail: milana_is@hotmail.com
   fromName: 'sport catalogus'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: assets
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
 meta:
   __names__:
     2d4821a0-b7c7-40da-936b-491c1cb092a6: product-image # product-image
@@ -12,7 +20,9 @@ meta:
     9ecb36cc-29f4-4826-bb99-2704a87a5fea: Common # Common
     37ebbc70-0c96-4509-8d2d-aadb391c7698: products # products
     53bf9987-2148-4aa0-86bb-71fde34f4604: Default # Default
+    93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7: product-assets # product-assets
     680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
+    a37f3cdf-8319-4d27-b214-efd6a1418d77: preview-image # preview-image
 plugins:
   redactor:
     edition: standard
