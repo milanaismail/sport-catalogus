@@ -41,7 +41,7 @@ siteSettings:
   06c63463-001c-4e31-8ae1-4796a44815cf: # sport catalogus
     hasUrls: true
     template: categories/_entry
-    uriFormat: 'products/{slug}'
+    uriFormat: 'categories/{slug}'
 structure:
   maxLevels: null
   uid: b9ed5b5f-7f4e-4d80-8444-9bc8647e654a
