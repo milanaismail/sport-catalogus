@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: header
+name: header
+propagationMethod: all
+siteSettings:
+  06c63463-001c-4e31-8ae1-4796a44815cf: # sport catalogus
+    enabledByDefault: true
+    hasUrls: true
+    template: header/_entry
+    uriFormat: header
+type: single

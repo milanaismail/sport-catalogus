@@ -1,4 +1,4 @@
-dateModified: 1703793138
+dateModified: 1703850055
 elementSources:
   craft\elements\Entry:
     -
@@ -20,6 +20,19 @@ elementSources:
         - 'field:8b83c4e8-99d9-4e85-a43c-b88a98c20c84' # product-price
         - 'field:2d4821a0-b7c7-40da-936b-491c1cb092a6' # product-image
       type: native
+    -
+      heading: ''
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+        - 'field:95690630-5893-4b1f-9b63-8aaacf90435f' # company-image
+      type: native
 email:
   fromEmail: milana_is@hotmail.com
   fromName: 'sport catalogus'
@@ -32,6 +45,13 @@ fs:
       path: '@webroot'
     type: craft\fs\Local
     url: '@web'
+  companyAssets:
+    hasUrls: true
+    name: 'company assets'
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
 meta:
   __names__:
     0c4ace3d-c87d-498a-810c-a48709d3873f: 'image preview' # image preview
@@ -39,13 +59,18 @@ meta:
     2d4821a0-b7c7-40da-936b-491c1cb092a6: product-image # product-image
     4d1124c1-bb8f-4029-a0e9-4c270757cdeb: products # products
     06c63463-001c-4e31-8ae1-4796a44815cf: 'sport catalogus' # sport catalogus
+    7b0d5659-26a5-4a11-b19d-c448d53df442: 'company assets' # company assets
     8b83c4e8-99d9-4e85-a43c-b88a98c20c84: product-price # product-price
+    9a6d205c-50a0-42fa-9881-d3bec5eaf967: header # header
     9ecb36cc-29f4-4826-bb99-2704a87a5fea: Common # Common
     37ebbc70-0c96-4509-8d2d-aadb391c7698: products # products
     53bf9987-2148-4aa0-86bb-71fde34f4604: Default # Default
     93bf6a67-dde7-4bbb-ab2b-8c04d8ea98b7: product-assets # product-assets
+    8347fa13-8ec9-4b96-84fd-ca08ea7dc0e7: header # header
     680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
     747070c2-a654-448c-901d-7a75e1c8c8ed: categories # categories
+    95690630-5893-4b1f-9b63-8aaacf90435f: company-image # company-image
+    ae2f83f2-c4f9-4ee6-b2aa-75d373bb2710: header # header
     e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
 plugins:
   redactor:

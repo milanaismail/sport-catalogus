@@ -54,7 +54,7 @@ nav a{
     border-radius: 6px;
     width: 300px;
     padding: 16px;
-    margin:8px;
+    margin:16px;
 }
 
 .product button{
@@ -123,10 +123,9 @@ select{
 .header-top{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     padding: 24px 48px;
 }
-
-
 
 @media only screen and (max-width: 600px) {
   
