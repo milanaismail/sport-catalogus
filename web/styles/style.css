@@ -10,6 +10,11 @@ header{
     text-align: center;
 }
 
+.page-title{
+    padding: 24px 48px;
+    background-color: rgba(0,0,0,0.1);
+}
+
 nav{
     background-color: #666;
     display: flex;
@@ -38,7 +43,6 @@ nav a{
 
 
 .shop{
-    padding: 24px 48px;
     text-align: center;
 }
 
@@ -108,12 +112,11 @@ nav a:hover, nav button:hover{
     background-color: rgba(0,0,0,0.2);
     display: flex;
     justify-content: flex-end;
-    padding: 8px;
-    border-radius: 50px;
+    padding:  16px 24px;
 }
 
-select{
-    padding: 8px;
+.custom-select{
+    padding: 8px 16px;
     border-radius: 50px;
     border: none;
     margin-right: 10px;
@@ -143,6 +146,7 @@ select{
     border: none;
     background-color: white;
 }
+
 
 @media only screen and (max-width: 600px) {
   

@@ -1,9 +1,11 @@
 {% extends "_layouts/main" %}
 {% block content %}
     <div class="shop">
+        <div class="page-title">
         <h1>All products</h1>
+        </div>
         <div class="shop-control-bar">
-        <select>
+        <select class="custom-select" id="sortSelect">
             <option value="0">Sort by</option>
             <option value="1">Price: low to high</option>
             <option value="2">Price: high to low</option>
