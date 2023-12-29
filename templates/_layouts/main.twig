@@ -15,16 +15,16 @@
         <div class="header-container">
             <div class="header-top">
                 <div class="logo">
-                    <a href="index.twig"><img id="logo" src="/images/logo.png" alt="logo" style="width: 100px"></a>
+                    <a href="index.twig"><img id="logo" src="{{ siteUrl }}images/logo.png" alt="logo" style="width: 100px"></a>
                 </div>
                 <div class="search">
                     <form action="search.php" method="post">
                         <input class="search" type="text" name="search" placeholder="Search">
-                        <button class="submit-search" type="submit" name="submit-search"><img src="images/search.png" alt="search" style="width: 15px"></button>
+                        <button class="submit-search" type="submit" name="submit-search"><img src="{{ siteUrl }}images/search.png" alt="search" style="width: 15px"></button>
                     </form>
                 </div>
                 <div class="cart">
-                    <a href="cart.php"><img src="images/market.png" alt="cart" style="width: 20px"></a> 
+                    <a href="cart.php"><img src="{{ siteUrl }}images/market.png" alt="cart" style="width: 20px"></a> 
                 </div>
             </div>
             <nav>
