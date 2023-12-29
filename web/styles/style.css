@@ -127,6 +127,10 @@ select{
     padding: 24px 48px;
 }
 
+.submit-search {
+    border: none;
+}
+
 @media only screen and (max-width: 600px) {
   
 }  
