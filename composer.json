@@ -2,6 +2,8 @@
   "require": {
     "craftcms/cms": "^4.4.0",
     "craftcms/redactor": "3.0.4",
+    "la-haute-societe/craft-elasticsearch": "2.1.1",
+    "putyourlightson/craft-sprig": "2.7.3",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
