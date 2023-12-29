@@ -81,7 +81,6 @@ nav a{
    border-radius: 6px;
    z-index: 1;
    padding: 8px;
-
 }
 
 .dropdown-menu a{
@@ -123,12 +122,13 @@ select{
 .header-top{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 24px 48px;
 }
 
-.submit-search {
+.submit-search button{
     border: none;
+    background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
