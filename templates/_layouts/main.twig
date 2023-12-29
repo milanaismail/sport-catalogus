@@ -9,6 +9,7 @@
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
     {% do craft.app.view.registerJsFile('@web/scripts/main.js') %}
+    {% do craft.app.view.registerJsFile('@web/scripts/sprig.js') %}
 </head>
 <body>
     <header>
@@ -18,7 +19,11 @@
                     <a href="index.twig"><img id="logo" src="{{ siteUrl }}images/logo.png" alt="logo" style="width: 100px"></a>
                 </div>
                 <div class="search">
-                     {{ sprig('_components/search') }}
+                {% set query = query ?? '' %}
+                    <div class="field">
+                        <input sprig s-trigger="keyup changed" s-replace="#productContainer" type="text" name="query" value="{{ query }}" placeholder="Search" class="text">
+                    </div>
+                    <button class="submit-search" type="button"><img src="{{ siteUrl }}images/search.png" alt="search" style="width: 15px"></button>
                 </div>
                 <div class="cart">
                     <a href="cart.php"><img src="{{ siteUrl }}images/market.png" alt="cart" style="width: 20px"></a> 
