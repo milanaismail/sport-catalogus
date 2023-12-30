@@ -142,12 +142,26 @@ nav a:hover, nav button:hover{
     border: 0.5px solid #ccc;
     }
 
-.submit-search{
+.submit-search, .submit-search-mobile{
     border: none;
     background-color: white;
 }
 
+.submit-search-mobile{
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
-  
+  .search{
+    display: none;
+  }
+  .cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .submit-search-mobile{
+    display: flex;
+  }
 }  

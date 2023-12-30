@@ -10,9 +10,7 @@
     {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
     {% do craft.app.view.registerJsFile('@web/scripts/main.js') %}
     {% do sprig.setRegisterScript(false) %}
-    {# Load htmx manually from a specific path or CDN. #}
     <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js" defer></script>
-    
     {% do craft.app.view.registerJsFile('@web/scripts/sprig.js') %}
 </head>
 <body>
@@ -30,6 +28,7 @@
                     <button class="submit-search" type="button"><img src="{{ siteUrl }}images/search.png" alt="search" style="width: 15px"></button>
                 </div>
                 <div class="cart">
+                    <button class="submit-search-mobile" type="button"><img src="{{ siteUrl }}images/search.png" alt="search" style="width: 15px"></button>
                     <a href="cart.php"><img src="{{ siteUrl }}images/market.png" alt="cart" style="width: 20px"></a> 
                 </div>
             </div>
