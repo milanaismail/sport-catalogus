@@ -177,14 +177,12 @@ nav a:hover, nav button:hover{
 .home h1{
     font-size: 60px;
     color: #fff;
-    text-shadow: 2px 2px #000;
     width: 800px;
 }
 
 .home p{
     font-size: 20px;
     color: #fff;
-    text-shadow: 2px 2px #000;
     width: 800px;
 }
 
