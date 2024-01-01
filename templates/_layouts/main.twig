@@ -21,10 +21,7 @@
                     <a href="index.twig"><img id="logo" src="{{ siteUrl }}images/logo.png" alt="logo" style="width: 100px"></a>
                 </div>
                 <div class="search">
-                {% set query = query ?? '' %}
-                    <div class="field">
-                        <input sprig s-trigger="keyup changed" s-replace="#productContainer" type="text" name="query" value="{{ query }}" placeholder="Search" class="text" s-log="query">
-                    </div>
+                    <input class="search" type="text" name="search" placeholder="Search">
                     <button class="submit-search" type="button"><img src="{{ siteUrl }}images/search.png" alt="search" style="width: 15px"></button>
                 </div>
                 <div class="cart">

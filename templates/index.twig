@@ -1,6 +1,7 @@
 {% extends "_layouts/main" %}
 {% block content %}
-    <div class="home" >
+    {% set image = homepage.bannerImage.one() %}
+    <div class="home" style="background-image: url('{{ image.url }}')">
      {% set homempage = craft.entries.section('homepage').one() %}
      {% if homepage %}
         <div class="banner-container">
