@@ -62,13 +62,22 @@ nav a{
 }
 
 .product button{
-    background-color: #666;
+    background-color: #b3d1ff;
     color: #fff;
     border: none;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     padding: 10px 20px;
+}
+
+.product button:hover{
+    background-color: #003366;
+    color: #fff;
+}
+
+.product button:active{
+    border: 2px solid #000;
 }
 
 .dropdown{
@@ -156,6 +165,43 @@ nav a:hover, nav button:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-image: url("../images/hockey-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.home h1{
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    width: 800px;
+}
+
+.home p{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    width: 800px;
+}
+
+.banner-button{
+    background-color: #b3d1ff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.banner-button:hover{
+    background-color: #003366;
+    color: #fff;
+}
+
+.banner-button:active{
+    border: 2px solid #000;
 }
 
 

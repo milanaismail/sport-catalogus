@@ -1,4 +1,4 @@
-dateModified: 1704114473
+dateModified: 1704114860
 elementSources:
   craft\elements\Entry:
     -
@@ -76,6 +76,7 @@ meta:
     ae2f83f2-c4f9-4ee6-b2aa-75d373bb2710: header # header
     b1cf72e9-894e-4b31-b5b6-8ba04d1479cb: homepage # homepage
     e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
+    fa869fbb-80de-4b07-8481-3fd886e5b5fd: banner-image # banner-image
 plugins:
   redactor:
     edition: standard
