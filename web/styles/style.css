@@ -162,12 +162,16 @@ nav a:hover, nav button:hover{
 
 .home{
     display: flex;
+    align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 800px;
+    overflow:hidden;
+
 }
 
 .home h1{
@@ -215,5 +219,20 @@ nav a:hover, nav button:hover{
   }
   .submit-search-mobile{
     display: flex;
+  }
+  .home h1{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    width: 600px;
+  }
+  .home{
+    height: 600px;
+  }
+  .home p{
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    width: 600px;
   }
 }  
