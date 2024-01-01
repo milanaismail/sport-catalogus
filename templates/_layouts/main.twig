@@ -9,9 +9,6 @@
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
     {% do craft.app.view.registerJsFile('@web/scripts/main.js') %}
-    {% do sprig.setRegisterScript(false) %}
-    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js" defer></script>
-    {% do craft.app.view.registerJsFile('@web/scripts/sprig.js') %}
 </head>
 <body>
     <header>
