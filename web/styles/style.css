@@ -151,6 +151,13 @@ nav a:hover, nav button:hover{
     display: none;
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 600px) {
   .search{

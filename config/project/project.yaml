@@ -1,4 +1,4 @@
-dateModified: 1703861097
+dateModified: 1704114473
 elementSources:
   craft\elements\Entry:
     -
@@ -54,7 +54,9 @@ fs:
     url: '@web'
 meta:
   __names__:
+    0b6d56ad-e595-4257-beb0-51f656d25b5f: banner-text # banner-text
     0c4ace3d-c87d-498a-810c-a48709d3873f: 'image preview' # image preview
+    0eeb7a7a-ae99-4cbd-9aa6-3d4dfb955303: homepage # homepage
     1c1c07ac-ae0c-4475-9d7d-d1573f81ee71: product-category # product-category
     2d4821a0-b7c7-40da-936b-491c1cb092a6: product-image # product-image
     4d1124c1-bb8f-4029-a0e9-4c270757cdeb: products # products
@@ -70,13 +72,11 @@ meta:
     680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
     747070c2-a654-448c-901d-7a75e1c8c8ed: categories # categories
     95690630-5893-4b1f-9b63-8aaacf90435f: company-image # company-image
+    a57f9432-0b15-4d7e-8858-de12f580b77d: banner-title # banner-title
     ae2f83f2-c4f9-4ee6-b2aa-75d373bb2710: header # header
+    b1cf72e9-894e-4b31-b5b6-8ba04d1479cb: homepage # homepage
     e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
 plugins:
-  elasticsearch:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.3.0
   redactor:
     edition: standard
     enabled: true

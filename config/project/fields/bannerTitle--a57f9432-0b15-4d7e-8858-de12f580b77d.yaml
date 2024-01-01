@@ -1,0 +1,19 @@
+columnSuffix: gskbtrfx
+contentColumnType: text
+fieldGroup: 9ecb36cc-29f4-4826-bb99-2704a87a5fea # Common
+handle: bannerTitle
+instructions: null
+name: banner-title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
