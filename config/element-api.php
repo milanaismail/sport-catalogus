@@ -18,7 +18,7 @@ return [
                         'title' => $entry->title,
                         'category' => $entry->productCategory,
                         'price' => $entry->productPrice,
-                        'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl('imagePreview')),
+                        'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl('mobilePreview')),
                     ];
                 },
             ];
