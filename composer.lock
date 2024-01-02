@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43904554c06fe8dcbb3a5611f177f49c",
+    "content-hash": "782faf5b159f678906aa95da4bd5bfe4",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1616,6 +1616,52 @@
                 "schema"
             ],
             "time": "2023-09-26T02:20:38+00:00"
+        },
+        {
+            "name": "leowebguy/craft-currency-converter",
+            "version": "1.0.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leowebguy/craft-currency-converter/zipball/b670624923ad0d336134cc1301992de44dfaf45a",
+                "reference": "b670624923ad0d336134cc1301992de44dfaf45a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0|^4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Currency Converter",
+                "handle": "currency-converter",
+                "hasCpSection": false,
+                "hasCpSettings": true,
+                "class": "leowebguy\\currencyconverter\\CurrencyConverter",
+                "components": {
+                    "currencyConverterService": "leowebguy\\currencyconverter\\services\\CurrencyConverterService"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "leowebguy\\currencyconverter\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo",
+                    "homepage": "https://github.com/leowebguy"
+                }
+            ],
+            "description": "Craft plugin to convert currency using API & local storage",
+            "keywords": [
+                "convert",
+                "converter",
+                "craftcms",
+                "currency"
+            ],
+            "time": "2022-08-25T13:53:22+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
