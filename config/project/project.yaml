@@ -1,4 +1,4 @@
-dateModified: 1704216749
+dateModified: 1704219838
 elementSources:
   craft\elements\Entry:
     -
@@ -85,6 +85,10 @@ plugins:
     enabled: true
     schemaVersion: 1.1.1
   currency-converter:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  element-api:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

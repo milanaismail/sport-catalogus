@@ -1,6 +1,7 @@
 {
   "require": {
     "craftcms/cms": "^4.4.0",
+    "craftcms/element-api": "3.0.1.1",
     "craftcms/redactor": "3.0.4",
     "leowebguy/craft-currency-converter": "1.0.6",
     "putyourlightson/craft-sprig": "^2.7",
