@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "782faf5b159f678906aa95da4bd5bfe4",
+    "content-hash": "723684d7671704174c0d15f854b6f65d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -5125,6 +5125,65 @@
                 "yii2"
             ],
             "time": "2022-09-04T10:48:21+00:00"
+        },
+        {
+            "name": "youandmedigital/breadcrumb",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/youandmedigital/craft-breadcrumb/zipball/f37656eda3c514ec3c37864ed448a9a4274ce590",
+                "reference": "f37656eda3c514ec3c37864ed448a9a4274ce590",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Breadcrumb",
+                "handle": "breadcrumb",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/youandmedigital/craft-breadcrumb/craft-4/CHANGELOG.md",
+                "documentationUrl": "https://github.com/youandmedigital/craft-breadcrumb/blob/craft-4/README.md",
+                "components": {
+                    "breadcrumbService": "youandmedigital\\breadcrumb\\services\\BreadcrumbService"
+                },
+                "class": "youandmedigital\\breadcrumb\\Breadcrumb"
+            },
+            "autoload": {
+                "psr-4": {
+                    "youandmedigital\\breadcrumb\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "You & Me Digital",
+                    "homepage": "https://youandme.digital"
+                }
+            ],
+            "description": "Generate a simple breadcrumb",
+            "keywords": [
+                "breadcrumb",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "development",
+                "navigation",
+                "templating",
+                "utilities"
+            ],
+            "support": {
+                "docs": "https://github.com/youandmedigital/craft-breadcrumb",
+                "issues": "https://github.com/youandmedigital/craft-breadcrumb/issues",
+                "source": "https://github.com/youandmedigital/craft-breadcrumb"
+            },
+            "time": "2022-10-03T20:31:57+00:00"
         }
     ],
     "packages-dev": [

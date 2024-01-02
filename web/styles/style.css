@@ -63,6 +63,7 @@ nav a{
 
 .product h2{
     font-size: 20px;
+    height: 50px;
 }
 
 .product button{
@@ -124,7 +125,7 @@ nav a:hover, nav button:hover{
 .shop-control-bar{
     background-color: rgba(0,0,0,0.2);
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
     padding:  16px 24px;
 }
 
@@ -209,6 +210,15 @@ nav a:hover, nav button:hover{
     border: 2px solid #000;
 }
 
+.c-breadcrumb__item{
+    display: flex;
+    list-style: none;
+    display: contents;
+}
+
+.c-breadcrumb__link{
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
   .search{

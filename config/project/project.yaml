@@ -1,4 +1,4 @@
-dateModified: 1704193400
+dateModified: 1704201595
 elementSources:
   craft\elements\Entry:
     -
@@ -78,6 +78,10 @@ meta:
     e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
     fa869fbb-80de-4b07-8481-3fd886e5b5fd: banner-image # banner-image
 plugins:
+  breadcrumb:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
   currency-converter:
     edition: standard
     enabled: true

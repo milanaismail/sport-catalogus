@@ -1,0 +1,33 @@
+<div class="shop-control-bar">
+    {% set myBreadcrumb = craft.breadcrumb.config %}
+
+    {# If there is more than 1 item in the breadcrumb #}
+    {% if myBreadcrumb > 1 %}
+    <div class="c-breadcrumb">
+        <ol class="c-breadcrumb__items">
+            {% for crumb in myBreadcrumb  %}
+                {# The last item in the breadcrumb #}
+                {% if loop.last %}
+                <li class="c-breadcrumb__item">
+                    <span> {{ crumb.title }}</span>
+                </li>
+                {# A normal link in the breadcrumb #}
+                {% else %}
+                <li class="c-breadcrumb__item">
+                    <a class="c-breadcrumb__link" href="{{ crumb.url }}">
+                        <span>{{ crumb.title }}</span>
+                    </a>
+                    <span class="c-breadcrumb__separator">/</span>
+
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+    {% endif %}
+    <select class="custom-select" id="sortSelect">
+        <option value="0">Sort by</option>
+        <option value="1">Price: low to high</option>
+        <option value="2">Price: high to low</option>
+    </select>
+</div>
