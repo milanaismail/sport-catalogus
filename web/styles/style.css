@@ -23,6 +23,7 @@ nav{
     align-items: flex-start;
     padding: 1em;
     overflow: hidden;
+    box-shadow:#333;
 }
 
 nav button{
@@ -174,7 +175,7 @@ nav a:hover, nav button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 100vh;
     overflow:hidden;
 
 }
@@ -220,31 +221,102 @@ nav a:hover, nav button:hover{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .search{
+.hamburger-menu{
     display: none;
-  }
-  .cart{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .submit-search-mobile{
-    display: flex;
-  }
-  .home h1{
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    width: 600px;
-  }
-  .home{
-    height: 600px;
-  }
-  .home p{
-    font-size: 16px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    width: 600px;
-  }
+}
+
+.dropdown-menu-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .search{
+        display: none;
+    }
+    .cart{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .submit-search-mobile{
+        display: flex;
+    }
+    .home h1{
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        width: 600px;
+    }
+
+    .home p{
+        font-size: 16px;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        width: 600px;
+    }
+    .c-breadcrumb{
+        display:none;
+    }
+    .shop-control-bar{
+        justify-content: flex-end;
+    }
+    nav{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 85px; 
+        left: 0;
+        width: 70%;
+        height:70%;
+        z-index: 2; 
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .hamburger-menu{
+    display: block;
+    }
+
+    .hamburger{
+    background-color: #fff;
+    border:none;
+    }
+
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        background-color: #666;
+        min-width: 160px;
+        padding: 8px;
+        border:none;
+        box-shadow:none;
+        text-align: left;
+        padding:0;
+     }
+     .dropdown-menu-mobile a{
+        display: flex;
+        color:white;
+        font-size: 16px;
+        padding: 6px;
+     }
+
+     .dropdown:hover .dropdown-menu{
+        display:none;
+     }
+
+     .dropdown button{
+        padding:0;
+     }
+     
+     .nav-visible{
+        display: flex;
+     }
 }  

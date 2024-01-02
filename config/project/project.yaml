@@ -1,4 +1,4 @@
-dateModified: 1704201595
+dateModified: 1704204167
 elementSources:
   craft\elements\Entry:
     -
@@ -71,6 +71,7 @@ meta:
     8347fa13-8ec9-4b96-84fd-ca08ea7dc0e7: header # header
     680398ac-9609-446c-8066-374815c5b013: 'sport catalogus' # sport catalogus
     747070c2-a654-448c-901d-7a75e1c8c8ed: categories # categories
+    25666555-7000-4c52-987a-b5e6de861c5c: 'logo preview' # logo preview
     95690630-5893-4b1f-9b63-8aaacf90435f: company-image # company-image
     a57f9432-0b15-4d7e-8858-de12f580b77d: banner-title # banner-title
     ae2f83f2-c4f9-4ee6-b2aa-75d373bb2710: header # header

@@ -14,8 +14,12 @@
     <header>
         <div class="header-container">
             <div class="header-top">
+                <div class="hamburger-menu">
+                    <button class="hamburger" type="button" onclick="toggleNav()"><img src="{{ siteUrl }}images/hamburger.png" alt="hamburger" style="width: 20px"></button>
+                </div>
                 <div class="logo">
-                    <a href="index.twig"><img id="logo" src="{{ siteUrl }}images/logo.png" alt="logo" style="width: 100px"></a>
+                       {% set logoImage = header.companyImage.one() %}
+                         <img id="logo" src="{{ logoImage.getUrl('logoPreview') }}" alt="logo">
                 </div>
                 <div class="search">
                     <input class="search" type="text" name="search" placeholder="Search">
@@ -26,11 +30,16 @@
                     <a href="cart.php"><img src="{{ siteUrl }}images/market.png" alt="cart" style="width: 20px"></a> 
                 </div>
             </div>
-            <nav>
-               <a href="index.twig">Home</a>
+            <nav id="mobileNav">
+               <a href="{{ siteUrl }}">Home</a>
                <div class="dropdown">
                <button onclick="window.location.href='{{ siteUrl }}products'" >Products</button>
                     <div class="dropdown-menu">
+                            <a href="{{siteUrl}}products/skates">Skates</a>
+                            <a href="{{siteUrl}}products/sticks">Sticks</a>
+                            <a href="{{siteUrl}}products/helmets">Helmets</a>
+                    </div>
+                    <div class="dropdown-menu-mobile">
                             <a href="{{siteUrl}}products/skates">Skates</a>
                             <a href="{{siteUrl}}products/sticks">Sticks</a>
                             <a href="{{siteUrl}}products/helmets">Helmets</a>

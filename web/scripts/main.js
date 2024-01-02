@@ -41,3 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+function toggleNav() {
+    var nav = document.getElementById('mobileNav');
+    nav.classList.toggle('nav-visible');
+}
+
+// Close the navigation if anything outside of it is clicked
+document.addEventListener('click', function (event) {
+    var nav = document.getElementById('mobileNav');
+    var hamburgerButton = document.querySelector('.hamburger');
+
+    if (!nav.contains(event.target) && !hamburgerButton.contains(event.target)) {
+        nav.classList.remove('nav-visible');
+    }
+});
