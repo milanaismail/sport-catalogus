@@ -13,10 +13,16 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function(Entry $entry) {
+                    // Get category details
+                    $category = $entry->productCategory->one();
+                    $categoryId = $category ? $category->id : null;
+                    $categoryTitle = $category ? $category->title : null;
+
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'category' => $entry->productCategory,
+                        'categoryId' => $categoryId,
+                        'categoryTitle' => $categoryTitle,
                         'price' => $entry->productPrice,
                         'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl('mobilepreview')),
                     ];
@@ -31,13 +37,13 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function(Entry $entry) {
-                  return [
-                    'id' => $entry->id,
-                    'title' => $entry->title,
-                    'category' => $entry->productCategory,
-                    'price' => $entry->productPrice,
-                    'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl('productImage')),
-                  ];
+                    return [
+                        'id' => $entry->id,
+                        'title' => $entry->title,
+                        'category' => $entry->productCategory,
+                        'price' => $entry->productPrice,
+                        'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl('productImage')),
+                    ];
               },
             ];
         },
