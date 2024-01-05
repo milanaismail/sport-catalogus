@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'helvetica', 'arial', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -55,7 +55,6 @@ nav a{
 }
 
 .product{
-    border: 1px solid #ccc;
     border-radius: 6px;
     width: 300px;
     padding: 16px;
@@ -65,31 +64,28 @@ nav a{
     align-items: center;
 }
 
+.product:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
 .product img{
     width:fit-content;
 }
 
 .product h2{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
     height: 50px;
     margin-top:18px;
     margin-bottom:0px;
 }
 
-.product button{
-    background-color: #b3d1ff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    padding: 15px 25px;
+.product p {
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.product button:hover{
-    background-color: #003366;
-    color: #fff;
-}
 
 .product button:active{
     border: 2px solid #000;
@@ -348,15 +344,10 @@ nav a:hover, nav button:hover{
     }
 
      .product{
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        padding: 16px;
-        margin:16px;
         width: 170px;
     }
     
     .product h2{
-        font-size: 20px;
         height: 50px;
         padding-bottom:8px;
     }

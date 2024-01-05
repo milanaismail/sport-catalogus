@@ -5,7 +5,6 @@
         <h1>All products</h1>
         </div>
         {% include '_layouts/shop-control-bar' %}
-
         <div class="shop-container" id="productContainer">
                 {% set entries = craft.entries().section('products').all() %}
                 {% for entry in entries %}
@@ -17,7 +16,6 @@
                     {% endif %}
                     <h2>{{ entry.title }}</h2>
                     <p>€ {{ entry.productPrice }}</p>
-                    <button>Add to cart</button>
                 </div>
                 {% endfor %}
     
