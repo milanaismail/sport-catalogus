@@ -1,8 +1,18 @@
-dateModified: 1704219838
+dateModified: 1704660963
 elementSources:
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+        - 'field:8ea9c317-f19e-48be-8f68-87c6706ef1ce' # product detail
       type: native
     -
       heading: Channels
@@ -19,6 +29,7 @@ elementSources:
         - link
         - 'field:8b83c4e8-99d9-4e85-a43c-b88a98c20c84' # product-price
         - 'field:2d4821a0-b7c7-40da-936b-491c1cb092a6' # product-image
+        - 'field:8ea9c317-f19e-48be-8f68-87c6706ef1ce' # product detail
       type: native
     -
       heading: ''
@@ -64,6 +75,7 @@ meta:
     7b0d5659-26a5-4a11-b19d-c448d53df442: 'company assets' # company assets
     8b83c4e8-99d9-4e85-a43c-b88a98c20c84: product-price # product-price
     8d263b6f-6746-4359-8556-8a29a6ab594c: mobilePreview # mobilePreview
+    8ea9c317-f19e-48be-8f68-87c6706ef1ce: 'product detail' # product detail
     9a6d205c-50a0-42fa-9881-d3bec5eaf967: header # header
     9ecb36cc-29f4-4826-bb99-2704a87a5fea: Common # Common
     37ebbc70-0c96-4509-8d2d-aadb391c7698: products # products
@@ -77,6 +89,7 @@ meta:
     a57f9432-0b15-4d7e-8858-de12f580b77d: banner-title # banner-title
     ae2f83f2-c4f9-4ee6-b2aa-75d373bb2710: header # header
     b1cf72e9-894e-4b31-b5b6-8ba04d1479cb: homepage # homepage
+    c00d1f86-e7ed-4398-bc90-d5c157eba5b3: detail # detail
     e009e9f0-3cd4-487e-89a0-b249443e4705: 'product categories' # product categories
     fa869fbb-80de-4b07-8481-3fd886e5b5fd: banner-image # banner-image
 plugins:

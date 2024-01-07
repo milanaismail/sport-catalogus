@@ -1,0 +1,65 @@
+{% extends "_layouts/main" %}
+{% block content %}
+    <ul class="simple-breadcrumbs">
+        <li class="first-breadcrumb"><a href="{{siteUrl}}products">Products / </a></li>
+        {% set productCategory = entry.productCategory.one() %}
+
+        {% if productCategory %}
+        <li> {{ productCategory.title }}</li>
+        {% endif %}    
+    </ul>
+    <div class=product-detail-container>
+        <div class="product-detail">
+            <img class="heart-icon" src="/images/outline-heart.png">
+            <img class="detail-image" src="{{ entry.productImage.one().getUrl('detail') }}" alt="{{ entry.productImage.one().title }}">
+        </div>
+        <div class="product-custom-container">
+                <div class="product-custom-header">
+                    <h1 class="detailed-product-title">{{ entry.title }}</h1>
+                    <p class="detailed-price">€ {{ entry.productPrice }}</p>
+                </div>
+            <div class="product-custom">
+                <div class="color">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <div class="color-option">
+                            <div class="circle black"></div>
+                            <p class="text">Black</p>
+                        </div>
+                        <div class="color-option">
+                            <div class="circle green"></div>
+                            <p class="text">Green</p>
+                        </div>
+                        <div class="color-option">
+                            <div class="circle blue"></div>
+                            <p class="text">Blue</p>
+                        </div>
+                        <div class="color-option">
+                            <div class="circle yellow"></div>
+                            <p class="text">Yellow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                <h3>Size</h3>
+                    <div class="size-options">
+                        <p>S-M</p>
+                        <p>M-L</p>
+                    </div>
+                </div>
+                <div class="quantity">
+                <h3>Quantity</h3>
+                    <div class="quantity-options">
+                        <p>-</p>
+                        <p>1</p>
+                        <p>+</p>
+                    </div>
+                </div>
+            </div>
+        <div class="product-description">
+            <p>{{ entry.productDetail }}</p>
+        </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+columnSuffix: guikiadv
+contentColumnType: text
+fieldGroup: 37ebbc70-0c96-4509-8d2d-aadb391c7698 # products
+handle: productDetail
+instructions: null
+name: 'product detail'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field
