@@ -13,7 +13,6 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function(Entry $entry) {
-                    // Get category details
                     $category = $entry->productCategory->one();
                     $categoryId = $category ? $category->id : null;
                     $categoryTitle = $category ? $category->title : null;
@@ -25,6 +24,7 @@ return [
                         'categoryTitle' => $categoryTitle,
                         'price' => $entry->productPrice,
                         'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl()),
+                        'productDetail' => $entry->productDetail,
                     ];
                 },
             ];
@@ -43,6 +43,8 @@ return [
                         'category' => $entry->productCategory,
                         'price' => $entry->productPrice,
                         'productImage' => str_replace("https", "http", $entry->productImage->one()->getUrl()),
+                        'productDetail' => $entry->productDetail,
+
                     ];
               },
             ];
