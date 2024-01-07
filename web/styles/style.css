@@ -242,6 +242,22 @@ nav a:hover, nav button:hover{
     display: none;
 }
 
+.footer-container{
+    background-color: #b3d1ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    box-shadow:#333;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
 @media only screen and (max-width: 800px) {
     .product{
         width: 250px;
