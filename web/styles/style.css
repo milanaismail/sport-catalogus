@@ -420,6 +420,21 @@ nav a:hover, nav button:hover{
     .detail-image {
         width: 500px;
     }
+    .cartButton{
+        align-self: center;
+        background-color: #b3d1ff;
+        padding: 16px 48px;
+        border-radius: 50px;
+        border:none;
+        margin-top: 16px;
+    }
+    .cartButton:hover{
+        background-color: #003366;
+        color: #fff;
+    }
+    .cartButton:active{
+        border: 2px solid #000;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -438,6 +453,7 @@ nav a:hover, nav button:hover{
         flex-direction: row;
         align-items: center;
     }
+
     .submit-search-mobile{
         display: flex;
     }
