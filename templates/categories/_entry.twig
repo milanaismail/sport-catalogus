@@ -9,12 +9,12 @@
         <div class="shop-container" id="productContainer">
             {% set entries = craft.entries().section('products').relatedTo(category) %}
             {% for entry in entries %}
-            <a href="{{ entry.url }}" class="product-detail">
+            <a href="{{ entry.url }}" class="product-info">
                 <div class="product">
                 {% set productImage = entry.productImage.one() %}
                 {% if productImage %}
-                
-                <img src="{{ productImage.getUrl('imagePreview') }}" alt="{{ entry.title }}">
+                <img src="{{ productImage.getUrl('imagePreview') }}" alt="{{ entry.title }}" class="desktop-image">
+                 <img src="{{ productImage.getUrl('mobilepreview') }}" alt="{{ entry.title }}" class="mobile-image">
                 {% endif %}
                     <h2>{{ entry.title }}</h2>
                     <p>€ {{ entry.productPrice }}</p>
