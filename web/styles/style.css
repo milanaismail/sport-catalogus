@@ -397,6 +397,22 @@ nav a:hover, nav button:hover{
     background-color: #fff;
 }
 
+.cartButton{
+    align-self: center;
+    background-color: #b3d1ff;
+    padding: 16px 48px;
+    border-radius: 50px;
+    border:none;
+    margin-top: 16px;
+}
+.cartButton:hover{
+    background-color: #003366;
+    color: #fff;
+}
+.cartButton:active{
+    border: 2px solid #000;
+}
+
 @media only screen and (min-width: 800px) {
     .product-detail-container{
         display: flex;
@@ -419,21 +435,6 @@ nav a:hover, nav button:hover{
     }
     .detail-image {
         width: 500px;
-    }
-    .cartButton{
-        align-self: center;
-        background-color: #b3d1ff;
-        padding: 16px 48px;
-        border-radius: 50px;
-        border:none;
-        margin-top: 16px;
-    }
-    .cartButton:hover{
-        background-color: #003366;
-        color: #fff;
-    }
-    .cartButton:active{
-        border: 2px solid #000;
     }
 }
 
